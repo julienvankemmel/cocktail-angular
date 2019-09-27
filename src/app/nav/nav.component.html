@@ -1,0 +1,14 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
+  <a class="navbar-brand" href="#"><span class="bigone">Co[de]ktail</span><br>Addict</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <div class="mr-auto"></div>
+    <form class="form-inline  my-2 my-lg-0" [formGroup]="searchForm" (ngSubmit)="onSubmit()">
+      <input class="form-control mr-sm-2" type="search" placeholder="Cocktail, alcohol..." aria-label="Search" formControlName="search">
+      <button class="btn btn-outline-warning my-2 my-sm-0" type="submit"><i class="lni-search"></i></button>
+    </form>
+  </div>
+</nav>
